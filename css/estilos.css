@@ -18,82 +18,134 @@ body{
   align-content: stretch;
 }
 .seccion{
-  background: #ecf0e7;
+  background: white;
   margin-bottom: 5px;
+  display: flex;
+}
+
+#info img{
+  width: 150px;
+  height: auto;
+  border-radius: 100px;
+  margin: 10px;
+  align-items: center;
+}
+
+.vl{
+  border-left: 1.5px solid gray;
+  margin: 10px;
+  height: 200px;
+  
 }
 
 /********** NAV ***********/
 
 #nav{
   width: 100%;
-  height: 80px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 20px;
 }
+
 #logo{
-  margin-left: 10px;
+  margin: 10px;
+  width: 50px; 
+
 }
+
 #links{
-  margin-right: 10px;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
 }
+
 #links ul li{
   text-decoration: none;
   display: inline-block;
-  margin-right: 5px
+  margin-right: 5px;
+  
 }
+
 #links ul li a{
+  margin: 30px;
   text-decoration: none;
-  color: #000;
+  color: #5c5d5f;
   font-weight: bold;
+
 }
 
 /********** DATA ***********/
 
 #data{
   width: 100%;
-  height: 130px;
+  height: auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px;
 }
+
 #info{
   width: 90%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  align-items: left;
 }
-#info p{
-  width: 70%;
+
+.parrafo{
+  width: 60%;
+  text-align: left;
+  margin: 10px;
 }
-#iconos{
-  width: 10%;
-}
+
 #iconos a{
   font-size: 40px;
   text-decoration: none;
   color: #626360;
+  align-content: baseline;
 }
+
 
 /********** BANNER ***********/
 
 .banner{
-  width
+  width: 100%;
   background: #ecf0e7;
-  margin-bottom: 5px;
+  margin: 0 auto;
 }
 
 /********** MAIN ***********/
 
 #main{
+
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  margin-top: 15px;
+  align-items: center;  
+  
 }
+
 .cajas{
-  width: 33%;
+  width: 250px;
   height: 250px;
-  background: #c8bcf6;
+  background: white;
+  margin: 20px;
+   
 }
+
+.cajaslogos img{
+  width: 100px;
+  height: auto;
+  padding: 10px; 
+
+}
+
+.habilidades{
+  justify-content: space-between;
+  display: inline-block;
+}
+
 
 /********** FOOTER ***********/
 
@@ -101,6 +153,10 @@ footer{
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
+  
+}
+
+#contacto a{
+  color: gray;
 }
