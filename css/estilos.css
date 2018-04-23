@@ -23,21 +23,6 @@ body{
   display: flex;
 }
 
-#info img{
-  width: 150px;
-  height: auto;
-  border-radius: 100px;
-  margin: 10px;
-  align-items: center;
-}
-
-.vl{
-  border-left: 1.5px solid gray;
-  margin: 10px;
-  height: 200px;
-  
-}
-
 /********** NAV ***********/
 
 #nav{
@@ -52,7 +37,6 @@ body{
 #logo{
   margin: 10px;
   width: 50px; 
-
 }
 
 #links{
@@ -65,7 +49,6 @@ body{
   text-decoration: none;
   display: inline-block;
   margin-right: 5px;
-  
 }
 
 #links ul li a{
@@ -73,7 +56,9 @@ body{
   text-decoration: none;
   color: #5c5d5f;
   font-weight: bold;
-
+}
+#links ul li a:hover{
+  color: #712366;
 }
 
 /********** DATA ***********/
@@ -90,40 +75,48 @@ body{
 #info{
   width: 90%;
   display: flex;
-  align-items: left;
+  align-items: center;
+}
+
+#info img{
+  width: 150px;
+  height: auto;
+  border-radius: 100px;
+  margin: 10px;
 }
 
 .parrafo{
   width: 60%;
-  text-align: left;
+  text-align: justify;
   margin: 10px;
+  border-left: 2px solid;
+}
+.parrafo h3, p{
+  margin-left: 20px;
 }
 
 #iconos a{
   font-size: 40px;
   text-decoration: none;
   color: #626360;
-  align-content: baseline;
 }
-
 
 /********** BANNER ***********/
 
 .banner{
   width: 100%;
-  background: #ecf0e7;
   margin: 0 auto;
 }
-
+.item img{
+  width: 100%;
+}
 /********** MAIN ***********/
 
 #main{
-
   display: flex;
   justify-content: center;
   margin-top: 15px;
   align-items: center;  
-  
 }
 
 .cajas{
@@ -134,18 +127,11 @@ body{
    
 }
 
-.cajaslogos img{
-  width: 100px;
+#cajaslogos img{
+  width: 80px;
   height: auto;
-  padding: 10px; 
-
+  padding: 5px;
 }
-
-.habilidades{
-  justify-content: space-between;
-  display: inline-block;
-}
-
 
 /********** FOOTER ***********/
 
@@ -153,10 +139,77 @@ footer{
   width: 100%;
   height: 50px;
   display: flex;
-  justify-content: center;
-  
-}
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+  }
 
 #contacto a{
   color: gray;
+}
+
+#social ul li{
+  display: inline-block;
+  font-size: 36px;
+  padding-right: 5px;
+}
+
+#social ul li a{
+  color: #626360;
+}
+
+/********** RESPONSIVE ***********/
+
+@media (max-width: 980px){
+
+  /*** NAV ***/
+
+  #nav{
+    flex-direction: column;
+    align-content: center
+  }
+  
+  #logo{
+    margin-right: 45%;
+  }
+  #links{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+  }
+  
+  #links ul li a{
+    margin: 15px;
+    text-decoration: none;
+    color: #5c5d5f;
+    font-weight: bold;
+  }
+
+  /*** DATA ***/
+
+  #data{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+  
+  #iconos{
+    margin-left: 70%;
+  }
+}
+
+@media (max-width: 875px){
+  #main{
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 645px){
+  #logo{
+    margin-right: 50%;
+  }
+  #links ul li a{
+    margin: 5px;
+  }
 }
