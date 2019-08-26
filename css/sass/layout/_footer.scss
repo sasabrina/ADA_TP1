@@ -1,0 +1,31 @@
+footer {
+    @include section-props;
+    
+    ul {
+        width: 90%;
+        min-height: 100px;
+        margin: auto;
+        padding: 15px 30px;
+        justify-content: space-between;
+        align-items: center;
+
+        .social {
+            min-width: 250px;
+            justify-content: flex-end;
+
+        }
+    }
+    
+    a {
+        color: $main-color;
+
+        i {
+            font-size: 25px;
+            margin: 0 5px;
+        }
+
+        &:hover {
+            @include links-hover;
+        }
+    }
+}

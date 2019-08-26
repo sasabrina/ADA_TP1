@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin-top: 5px;
+  font-family: $main-font;
+  position: relative;
+
+  ul {
+      list-style: none;
+      margin: 0;
+      display: flex;
+  }
+
+  .banner {
+    @include section-props;
+    height: calc(100vh - 140px);
+    display: flex;
+    align-items: center;
+  }
+
+  .up-btn {
+    width: 50px;
+    height: 50px;
+    line-height: 58px;
+    text-align: center;
+    background-color: #5c5d5f5e;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+
+    i {
+      color: #ffffff;
+      font-size: 25px;
+    }
+  }
+}

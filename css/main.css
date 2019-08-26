@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 5px;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
+body ul {
+  list-style: none;
+  margin: 0;
+  display: flex;
+}
+body .banner {
+  width: 90%;
+  margin: auto;
+  height: calc(100vh - 140px);
+  display: flex;
+  align-items: center;
+}
+body .up-btn {
+  width: 50px;
+  height: 50px;
+  line-height: 58px;
+  text-align: center;
+  background-color: #5c5d5f5e;
+  border-radius: 50%;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+body .up-btn i {
+  color: #ffffff;
+  font-size: 25px;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+nav ul {
+  min-width: 450px;
+  justify-content: space-evenly;
+}
+nav ul li {
+  min-width: 70px;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 14px;
+  font-weight: 500;
+}
+nav a {
+  color: #5c5d5f;
+  font-size: 14px;
+}
+nav a:hover {
+  text-decoration: none;
+  color: #712366;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+main {
+  width: 90%;
+  margin: auto;
+}
+main #about-me {
+  height: 100vh;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main #about-me figure {
+  flex-basis: 1;
+  max-width: 250px;
+  margin: 0 0 0 100px;
+  padding: 15px;
+}
+main #about-me figure img {
+  width: 100%;
+  border-radius: 50%;
+}
+main #about-me .info {
+  flex-basis: 3;
+  border-left: 2px solid #5c5d5f;
+  margin: 0 0 0 100px;
+  padding: 0 100px 0 100px;
+}
+main #about-me .info h3 {
+  text-align: end;
+}
+main #about-me .info p {
+  text-align: justify;
+}
+main #services {
+  height: 100vh;
+  justify-content: space-evenly;
+  align-items: center;
+}
+main #services .services-box {
+  max-width: 250px;
+  box-shadow: 10px 5px 5px #5c5d5f;
+}
+main #services .services-box a {
+  pointer-events: none;
+}
+main #services #logos {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 5px;
+}
+main #services #logos li {
+  margin: 0 5px;
+}
+main #services #logos img {
+  max-width: 80px;
+}
+
+footer {
+  width: 90%;
+  margin: auto;
+}
+footer ul {
+  width: 90%;
+  min-height: 100px;
+  margin: auto;
+  padding: 15px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+footer ul .social {
+  min-width: 250px;
+  justify-content: flex-end;
+}
+footer a {
+  color: #5c5d5f;
+}
+footer a i {
+  font-size: 25px;
+  margin: 0 5px;
+}
+footer a:hover {
+  text-decoration: none;
+  color: #712366;
+}
+
+/*# sourceMappingURL=main.css.map */

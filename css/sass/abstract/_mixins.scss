@@ -1,0 +1,13 @@
+@mixin section-props {
+    width: 90%;
+    margin: auto;
+}
+
+@mixin section-height {
+    height: 100vh;
+}
+
+@mixin links-hover {
+    text-decoration: none;
+    color: $links-hover-color;
+}

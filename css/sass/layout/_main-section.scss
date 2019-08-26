@@ -1,0 +1,6 @@
+main {
+    @include section-props;
+
+    @import "./about-me";
+    @import "./services";
+}

@@ -1,0 +1,35 @@
+#about-me {
+    @include section-height;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    figure {
+        flex-basis: 1;
+        max-width: 250px;
+        margin: $about-margins;
+        padding: 15px;
+
+        img{
+            width: 100%;
+            border-radius: 50%;
+        }
+    }
+
+    .info {
+        flex-basis: 3;
+        border-left: 2px solid $main-color;
+        margin: $about-margins;
+        padding: 0 100px 0 100px;
+
+        h3 {
+            text-align: end;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
