@@ -1,12 +1,31 @@
-@mixin section-props {
+@mixin normal-section-props {
     width: 90%;
     margin: auto;
 }
 
-@mixin section-height {
-    height: 100vh;
+@mixin flex-container ($mq-direction){
+    display: flex;
+
+    @media (min-width: $min-movile) and (max-width: $medium-movile) {
+        flex-direction: $mq-direction
+    }
 }
 
+@mixin normal-section-height {
+    height: 100vh;
+    @media (min-width: $min-movile) and (max-width: $medium-movile) {
+        height: auto;
+    }
+}
+@mixin about-margins{
+    margin: 0 0 0 100px;
+    @media (min-width: $max-movile) and (max-width: 1050px){
+        margin: 0 0 0 50px;
+    }
+    @media (min-width: $medium-movile) and (max-width: $max-movile){
+        margin: 0;
+    }
+}
 @mixin links-hover {
     text-decoration: none;
     color: $links-hover-color;

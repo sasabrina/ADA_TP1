@@ -11,14 +11,18 @@ body {
   ul {
       list-style: none;
       margin: 0;
-      display: flex;
+      
   }
 
   .banner {
-    @include section-props;
+    @include normal-section-props;
     height: calc(100vh - 140px);
     display: flex;
     align-items: center;
+
+    @media (min-width: $min-movile) and (max-width: $medium-movile){
+      display: none
+    }
   }
 
   .up-btn {

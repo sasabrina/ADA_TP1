@@ -1,27 +1,44 @@
 footer {
-    @include section-props;
+    @include normal-section-props;
     
-    ul {
+    .contact-list {
         width: 90%;
         min-height: 100px;
         margin: auto;
         padding: 15px 30px;
+        @include flex-container(column);
         justify-content: space-between;
         align-items: center;
 
         .social {
+            @include flex-container(row);
             min-width: 250px;
             justify-content: flex-end;
-
+           
+            @media (min-width: $min-movile) and (max-width: $medium-movile){
+                justify-content: center;
+            }
         }
     }
     
+    @media (min-width: $min-movile) and (max-width: $medium-movile){
+        height: auto;
+        padding: 30px;
+
+        .contact-list {
+            justify-content: center;
+        }
+    }
+
     a {
         color: $main-color;
 
         i {
             font-size: 25px;
             margin: 0 5px;
+            @media (min-width: $min-movile) and (max-width: $medium-movile){
+                font-size: 20px
+            }
         }
 
         &:hover {

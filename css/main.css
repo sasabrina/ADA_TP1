@@ -12,7 +12,6 @@ body {
 body ul {
   list-style: none;
   margin: 0;
-  display: flex;
 }
 body .banner {
   width: 90%;
@@ -20,6 +19,11 @@ body .banner {
   height: calc(100vh - 140px);
   display: flex;
   align-items: center;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  body .banner {
+    display: none;
+  }
 }
 body .up-btn {
   width: 50px;
@@ -45,9 +49,44 @@ nav {
   align-items: center;
   padding: 15px;
 }
+@media (min-width: 375px) and (max-width: 650px) {
+  nav {
+    flex-direction: column;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  nav {
+    flex-direction: column;
+  }
+}
 nav ul {
   min-width: 450px;
+  display: flex;
   justify-content: space-evenly;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  nav ul {
+    flex-direction: row;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  nav ul {
+    min-width: 350px;
+    padding: 30px 0;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  nav ul {
+    padding: 30px 0;
+  }
 }
 nav ul li {
   min-width: 70px;
@@ -79,21 +118,62 @@ main #about-me {
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 375px) and (max-width: 650px) {
+  main #about-me {
+    height: auto;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #about-me {
+    flex-direction: column;
+  }
+}
 main #about-me figure {
-  flex-basis: 1;
-  max-width: 250px;
+  min-width: 250px;
   margin: 0 0 0 100px;
   padding: 15px;
+}
+@media (min-width: 850px) and (max-width: 1050px) {
+  main #about-me figure {
+    margin: 0 0 0 50px;
+  }
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  main #about-me figure {
+    margin: 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #about-me figure {
+    max-width: 50%;
+    margin: 0;
+  }
 }
 main #about-me figure img {
   width: 100%;
   border-radius: 50%;
 }
 main #about-me .info {
-  flex-basis: 3;
   border-left: 2px solid #5c5d5f;
   margin: 0 0 0 100px;
   padding: 0 100px 0 100px;
+}
+@media (min-width: 850px) and (max-width: 1050px) {
+  main #about-me .info {
+    margin: 0 0 0 50px;
+  }
+}
+@media (min-width: 650px) and (max-width: 850px) {
+  main #about-me .info {
+    margin: 0;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #about-me .info {
+    border-left: none;
+    padding: 0 0 50px 0;
+    margin: 0;
+  }
 }
 main #about-me .info h3 {
   text-align: end;
@@ -103,20 +183,42 @@ main #about-me .info p {
 }
 main #services {
   height: 100vh;
+  display: flex;
   justify-content: space-evenly;
   align-items: center;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #services {
+    height: auto;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #services {
+    flex-direction: column;
+  }
 }
 main #services .services-box {
   max-width: 250px;
   box-shadow: 10px 5px 5px #5c5d5f;
 }
+@media (min-width: 375px) and (max-width: 650px) {
+  main #services .services-box {
+    margin-bottom: 15px;
+  }
+}
 main #services .services-box a {
   pointer-events: none;
 }
 main #services #logos {
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding-top: 5px;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  main #services #logos {
+    flex-direction: row;
+  }
 }
 main #services #logos li {
   margin: 0 5px;
@@ -129,17 +231,43 @@ footer {
   width: 90%;
   margin: auto;
 }
-footer ul {
+footer .contact-list {
   width: 90%;
   min-height: 100px;
   margin: auto;
   padding: 15px 30px;
+  display: flex;
   justify-content: space-between;
   align-items: center;
 }
-footer ul .social {
+@media (min-width: 375px) and (max-width: 650px) {
+  footer .contact-list {
+    flex-direction: column;
+  }
+}
+footer .contact-list .social {
+  display: flex;
   min-width: 250px;
   justify-content: flex-end;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  footer .contact-list .social {
+    flex-direction: row;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  footer .contact-list .social {
+    justify-content: center;
+  }
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  footer {
+    height: auto;
+    padding: 30px;
+  }
+  footer .contact-list {
+    justify-content: center;
+  }
 }
 footer a {
   color: #5c5d5f;
@@ -147,6 +275,11 @@ footer a {
 footer a i {
   font-size: 25px;
   margin: 0 5px;
+}
+@media (min-width: 375px) and (max-width: 650px) {
+  footer a i {
+    font-size: 20px;
+  }
 }
 footer a:hover {
   text-decoration: none;

@@ -1,17 +1,20 @@
 #about-me {
-    @include section-height;
+    @include normal-section-height;
     width: 100%;
     padding: 20px;
-    display: flex;
+    @include flex-container(column);
     justify-content: center;
     align-items: center;
 
     figure {
-        flex-basis: 1;
-        max-width: 250px;
-        margin: $about-margins;
+        min-width: 250px;
+        @include about-margins;
         padding: 15px;
 
+        @media (min-width: $min-movile) and (max-width: $medium-movile){
+            max-width: 50%;
+            margin: 0;
+        }
         img{
             width: 100%;
             border-radius: 50%;
@@ -19,10 +22,15 @@
     }
 
     .info {
-        flex-basis: 3;
         border-left: 2px solid $main-color;
-        margin: $about-margins;
+        @include about-margins;
         padding: 0 100px 0 100px;
+
+        @media (min-width: $min-movile) and (max-width: $medium-movile){
+            border-left: none;
+            padding: 0 0 50px 0;
+            margin: 0 
+        }
 
         h3 {
             text-align: end;

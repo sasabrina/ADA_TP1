@@ -1,5 +1,5 @@
 main {
-    @include section-props;
+    @include normal-section-props;
 
     @import "./about-me";
     @import "./services";

@@ -1,21 +1,26 @@
 #services {
-    @include section-height;
+    @include normal-section-height;
+    @include flex-container(column);
     justify-content: space-evenly;
     align-items: center;
-    
+
     .services-box {
         max-width: 250px;
         box-shadow: 10px 5px 5px $main-color;
-
+        @media (min-width: $min-movile) and (max-width: $medium-movile){
+            margin-bottom: 15px;
+        }
         a{
             pointer-events: none;
         }
     }
 
     #logos {
+        @include flex-container(row);
         justify-content: center;
         flex-wrap: wrap;
         padding-top: 5px;
+        
 
         li {
             margin: 0 5px;
