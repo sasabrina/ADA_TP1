@@ -15,13 +15,13 @@ footer {
             min-width: 250px;
             justify-content: flex-end;
            
-            @media (min-width: $min-movile) and (max-width: $medium-movile){
+            @media (min-width: $min-mobile) and (max-width: $medium-mobile){
                 justify-content: center;
             }
         }
     }
     
-    @media (min-width: $min-movile) and (max-width: $medium-movile){
+    @media (min-width: $min-mobile) and (max-width: $medium-mobile){
         height: auto;
         padding: 30px;
 
@@ -36,7 +36,7 @@ footer {
         i {
             font-size: 25px;
             margin: 0 5px;
-            @media (min-width: $min-movile) and (max-width: $medium-movile){
+            @media (min-width: $min-mobile) and (max-width: $medium-mobile){
                 font-size: 20px
             }
         }

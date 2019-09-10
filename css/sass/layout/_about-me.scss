@@ -11,7 +11,7 @@
         @include about-margins;
         padding: 15px;
 
-        @media (min-width: $min-movile) and (max-width: $medium-movile){
+        @media (min-width: $min-mobile) and (max-width: $medium-mobile){
             max-width: 50%;
             margin: 0;
         }
@@ -26,7 +26,7 @@
         @include about-margins;
         padding: 0 100px 0 100px;
 
-        @media (min-width: $min-movile) and (max-width: $medium-movile){
+        @media (min-width: $min-mobile) and (max-width: $medium-mobile){
             border-left: none;
             padding: 0 0 50px 0;
             margin: 0 

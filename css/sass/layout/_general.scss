@@ -20,7 +20,7 @@ body {
     display: flex;
     align-items: center;
 
-    @media (min-width: $min-movile) and (max-width: $medium-movile){
+    @media (min-width: $min-mobile) and (max-width: $medium-mobile){
       display: none
     }
   }

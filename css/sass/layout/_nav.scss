@@ -5,13 +5,13 @@ nav {
     align-items: center;
     padding: 15px;
 
-    @media (min-width: $min-movile) and (max-width: $medium-movile){
+    @media (min-width: $min-mobile) and (max-width: $medium-mobile){
         width: 100%;
         margin: 0;
         padding: 0;
     }
 
-    @media (min-width: $medium-movile) and (max-width: $max-movile){
+    @media (min-width: $medium-mobile) and (max-width: $max-mobile){
         flex-direction: column;
     }
 
@@ -20,13 +20,13 @@ nav {
         @include flex-container(row);
         justify-content: space-evenly;
 
-        @media (min-width: $min-movile) and (max-width: $medium-movile){
+        @media (min-width: $min-mobile) and (max-width: $medium-mobile){
             min-width: 350px;
             padding: 30px 0;
             justify-content: space-between;
         }
 
-        @media (min-width: $medium-movile) and (max-width: $max-movile){
+        @media (min-width: $medium-mobile) and (max-width: $max-mobile){
             padding: 30px 0;
         }
         li {
